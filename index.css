@@ -76,6 +76,7 @@ nav ul li a {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  font-family: "Montserrat", sans-serif;
 }
 .row {
   display: flex;
@@ -83,7 +84,7 @@ nav ul li a {
   align-items: center;
 }
 .me .row img {
-  width: 170px;
+  width: 200px;
   border-radius: 50%;
   border: solid white 6px;
   margin: 25px;
@@ -94,6 +95,9 @@ nav ul li a {
 .me .row ul li a {
   text-decoration: none;
   margin: 25px;
+}
+.me h2 {
+  color: white;
 }
 
 .about {
