@@ -47,6 +47,10 @@ nav ul li {
 nav ul li a {
   text-decoration: none;
 }
+#menuList {
+  display: none;
+}
+
 .imagebg {
   width: 100%;
   height: 1100px;
@@ -54,12 +58,11 @@ nav ul li a {
   background: url(image/bg.webp) no-repeat fixed center;
   background-size: cover;
 }
-
 .imagebg2 {
   height: 1100px;
   margin-top: 40px;
   position: absolute;
-  transform: translateX(50px);
+  transform: translateX(20px);
 }
 .col-1 {
   height: 1000px;
@@ -83,18 +86,17 @@ nav ul li a {
   justify-content: center;
   align-items: center;
 }
-.me .row img {
-  width: 200px;
+.profil {
+  height: 200px;
+  border: solid white 10px;
   border-radius: 50%;
-  border: solid white 6px;
-  margin: 25px;
 }
-.me .row ul li {
-  list-style: none;
+.row .profil {
+  margin: 20px 20px;
 }
-.me .row ul li a {
-  text-decoration: none;
-  margin: 25px;
+.row-1,
+img {
+  margin: 20px 20px;
 }
 .me h2 {
   color: white;
@@ -102,26 +104,90 @@ nav ul li a {
 
 .about {
   text-align: center;
-  padding-left: 510px;
-  padding-right: 510px;
+  padding: 50px 510px;
 }
 .gallery {
 }
 @media only screen and (max-width: 1230px) {
   .imagebg2 {
-    width: 80%;
+    width: 90%;
     height: auto;
-    transform: translateX(12px);
+    transform: translateX(5px);
   }
-  nav ul li {
-    margin-left: 5px;
-    margin-right: 5px;
+  .navb {
+    justify-content: flex-start;
+  }
+  nav .menu-2 {
+    justify-content: center;
   }
   .col-1 {
     margin-top: 75%;
   }
+  .row {
+    align-items: center;
+  }
+  .row .profil {
+    margin: 10px 10px;
+  }
+  .row-1,
+  img {
+    margin: 10px 10px;
+  }
   .about {
-    padding-left: 80px;
-    padding-right: 80px;
+    padding: 60px 120px;
+  }
+}
+@media only screen and (max-width: 800px) {
+  nav ul {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.7);
+    position: absolute;
+    top: 62px;
+    right: 0;
+    z-index: 2;
+    align-items: flex-end;
+  }
+  .navbar {
+    display: flex;
+    align-items: flex-start;
+  }
+  .menu-2 {
+    display: none;
+  }
+  .menu {
+    display: block;
+  }
+
+  .row .profil {
+    margin: 2px 2px;
+  }
+  .row-1,
+  img {
+    margin: 2px 2px;
+  }
+  #menuList {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    transition: 0.5s;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .menu {
+    display: block;
+  }
+  .row {
+    flex-direction: column;
+  }
+
+  .me {
+    height: 450px;
+  }
+  .me h2 {
+    margin-top: 20px;
+  }
+  .row {
+    display: flex;
+    flex-direction: column;
   }
 }
