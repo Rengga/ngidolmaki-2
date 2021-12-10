@@ -115,12 +115,12 @@ nav ul li a {
   .imagebg2 {
     height: 800px;
   }
-  .navb {
+  /* .navb {
     justify-content: center;
   }
   nav .menu-2 {
     justify-content: center;
-  }
+  } */
   .col-1 {
     width: 100%;
   }
@@ -153,14 +153,12 @@ nav ul li a {
   }
   .navbar {
     display: flex;
-    align-items: center;
     justify-content: space-between;
   }
   .menu-2 {
     display: none;
   }
-  .menu,
-  .logo {
+  .menu ,.logo{
     display: block;
     margin: 4px 20px;
   }
