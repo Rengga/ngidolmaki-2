@@ -1,8 +1,12 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Narrow&family=Courgette&family=Montserrat&display=swap");
 
 * {
   margin: 0;
   padding: 0;
+}
+body {
+  background: url(image/bg.webp) no-repeat fixed center;
+  background-size: cover;
 }
 
 .container {
@@ -21,7 +25,7 @@
   background: rgba(255, 255, 255, 0.7);
   align-items: center;
   justify-content: center;
-  padding: 0 20px;
+  position: absolute;
   z-index: 1;
 }
 .menu {
@@ -29,8 +33,14 @@
   cursor: pointer;
 }
 .logo {
-  width: 140px;
-  margin-top: 10px;
+  font-size: 25pt;
+  font-family: "Courgette", cursive;
+  color: #1db9c3;
+  text-decoration: underline;
+}
+.menu-2 li a,
+.logo {
+  margin: 5px 30px;
 }
 nav {
   flex: 1;
@@ -38,43 +48,32 @@ nav {
 }
 nav ul li {
   list-style: none;
-  margin-left: 40px;
-  margin-right: 40px;
+  margin: 0px 10px;
   display: inline-block;
   font-size: 20px;
   font-family: "Montserrat", sans-serif;
 }
 nav ul li a {
   text-decoration: none;
+  color: #1db9c3;
 }
 #menuList {
   display: none;
 }
 
-.imagebg {
-  width: 100%;
-  height: 1100px;
-  position: absolute;
-  background: url(image/bg.webp) no-repeat fixed center;
-  background-size: cover;
-}
 .imagebg2 {
-  height: 1100px;
-  margin-top: 40px;
-  position: absolute;
-  transform: translateX(20px);
+  height: 1000px;
+  position: relative;
+  transform: translateX(70px);
 }
 .col-1 {
-  height: 1000px;
   width: 100%;
-  margin-top: 990px;
-  position: absolute;
   background: white;
   text-align: center;
 }
 .me {
   width: 100%;
-  height: 400px;
+  height: 380px;
   background-color: #1db9c3;
   display: flex;
   flex-direction: column;
@@ -94,14 +93,18 @@ nav ul li a {
 .row .profil {
   margin: 20px 20px;
 }
-.row-1,
-img {
+.row-1 img {
   margin: 20px 20px;
 }
 .me h2 {
   color: white;
+  margin: 10px 0;
 }
 
+.about,
+.gallery {
+  font-family: "Archivo Narrow", sans-serif;
+}
 .about {
   text-align: center;
   padding: 50px 510px;
@@ -110,18 +113,16 @@ img {
 }
 @media only screen and (max-width: 1230px) {
   .imagebg2 {
-    width: 90%;
-    height: auto;
-    transform: translateX(5px);
+    height: 800px;
   }
   .navb {
-    justify-content: flex-start;
+    justify-content: center;
   }
   nav .menu-2 {
     justify-content: center;
   }
   .col-1 {
-    margin-top: 75%;
+    width: 100%;
   }
   .row {
     align-items: center;
@@ -129,8 +130,7 @@ img {
   .row .profil {
     margin: 10px 10px;
   }
-  .row-1,
-  img {
+  .row-1 img {
     margin: 10px 10px;
   }
   .about {
@@ -138,32 +138,37 @@ img {
   }
 }
 @media only screen and (max-width: 800px) {
+  .imagebg2 {
+    height: 400px;
+    transform: translateX(35px);
+  }
   nav ul {
     width: 100%;
     background: rgba(255, 255, 255, 0.7);
     position: absolute;
-    top: 62px;
+    top: 50px;
     right: 0;
     z-index: 2;
-    align-items: flex-end;
+    align-items: center;
   }
   .navbar {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
+    justify-content: space-between;
   }
   .menu-2 {
     display: none;
   }
-  .menu {
+  .menu,
+  .logo {
     display: block;
+    margin: 4px 20px;
   }
-
   .row .profil {
-    margin: 2px 2px;
+    margin: 2px 8px;
   }
-  .row-1,
-  img {
-    margin: 2px 2px;
+  .row-1 img {
+    margin: 2px 6px;
   }
   #menuList {
     display: flex;
@@ -171,23 +176,38 @@ img {
     overflow: hidden;
     transition: 0.5s;
   }
+  .about {
+    padding: 50px 50px;
 }
 @media only screen and (max-width: 400px) {
+  .imagebg2 {
+    height: 400px;
+    transform: translateX(15px);
+  }
   .menu {
     display: block;
   }
   .row {
-    flex-direction: column;
+    margin: 20px 0px;
+  }
+  .row .profil {
+    margin: 2px 2px;
+    height: 130px;
+    border: 5px solid white;
+  }
+  .row img {
+    margin: 0px;
   }
 
   .me {
-    height: 450px;
-  }
-  .me h2 {
-    margin-top: 20px;
+    height: 300px;
+    align-items: center;
+    justify-content: center;
   }
   .row {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
   }
+  .about {
+    padding: 50px 50px;
 }
