@@ -93,9 +93,31 @@ nav ul li a {
 .row .profil {
   margin: 20px 20px;
 }
-.row-1 img {
+.row-1 a img{
   margin: 20px 20px;
+  transition: 0.3s;
 }
+/* ----------------------------hover---------------- */
+#fb:hover{
+  transform: translateY(-5px);
+}
+#ig:hover{
+  transform: translateY(-5px);
+}
+#twit:hover{
+  transform: translateY(-5px);
+}
+#git:hover{
+  transform: translateY(-5px);
+}
+#pix:hover{
+  transform: translateY(-5px);
+}
+#arx:hover{
+  transform: translateY(-5px);
+}
+
+/* -------------------------------hover---------------- */
 .me h2 {
   color: white;
   margin: 10px 0;
@@ -107,7 +129,10 @@ nav ul li a {
 }
 .about {
   text-align: center;
-  padding: 50px 350px;
+  padding: 20px 350px;
+}
+.about h2{
+  margin-bottom: 10px;
 }
 .gallery {
 }
@@ -130,11 +155,11 @@ nav ul li a {
   .row .profil {
     margin: 10px 10px;
   }
-  .row-1 img {
+  .row-1 a img {
     margin: 10px 10px;
   }
   .about {
-    padding: 60px 120px;
+    padding: 20px 120px;
   }
 }
 @media only screen and (max-width: 800px) {
@@ -165,7 +190,7 @@ nav ul li a {
   .row .profil {
     margin: 2px 8px;
   }
-  .row-1 img {
+  .row-1 a img {
     margin: 2px 6px;
   }
   #menuList {
@@ -175,7 +200,7 @@ nav ul li a {
     transition: 0.5s;
   }
   .about {
-    padding: 50px 50px;
+    padding: 20px 50px;
 }
 @media only screen and (max-width: 400px) {
   .imagebg2 {
@@ -193,7 +218,7 @@ nav ul li a {
     height: 130px;
     border: 5px solid white;
   }
-  .row img {
+  .row-1 a img {
     margin: 0px;
   }
 
@@ -207,5 +232,5 @@ nav ul li a {
     flex-direction: row;
   }
   .about {
-    padding: 50px 50px;
+    padding: 20px 50px;
 }
